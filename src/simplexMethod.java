@@ -105,16 +105,19 @@ public class simplexMethod {
     }
 
     public static void main(String[] args) {
+        // A matrix is used to pass constraints
         double[][] A = {
-                {2, 1, 1},
-                {1, 2, 3},
-                {2, 2, 1}
+                {1, 2, 1},
+                {3, 0, 2},
+                {1, 4, 0}
         };
-        double[] b = {2, 5, 6};
-        double[] c = {1, 2, 3};
+        // b is used to pass right hand side value of the constraints
+        // c is to pass objective function
+        double[] b = {430, 460, 420};
+        double[] c = {3, 2, 5};
 
         // true for maximization, false for minimization
-        boolean isMaximization = false;
+        boolean isMaximization = true;
 
         simplexMethod simplexMethod = new simplexMethod(A, b, c, isMaximization);
         simplexMethod.solve();
