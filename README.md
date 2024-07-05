@@ -8,8 +8,7 @@ They aim to maximize or minimize an objective function (e.g., profit, cost, effi
 This is my full course on Operation Research exclusively on YouTube with notes.<br /> 
 Click Here to access Playlist: <a href="https://www.youtube.com/playlist?list=PL23dd-8zssJAdGmsSofO4UaRyEXZDtm7a"> <img align="center" src="https://cdn.icon-icons.com/icons2/584/PNG/512/play_youtube_video_media_playlist_vid_icon-icons.com_55213.png" alt="start practicing"  height="50" width="50" /> </a>
 
-Whether you’re a student, a professional, or just someone passionate about mathematics and computational techniques, this course is designed to provide you with a comprehensive understanding of Operation Research. I will cover a wide range of topics including
-
+Whether you’re a student, a professional, or just someone passionate about mathematics and computational techniques, this course is designed to provide you with a comprehensive understanding of Operation Research. 
 
 Stay tuned and let’s make learning fun and engaging! 
 
