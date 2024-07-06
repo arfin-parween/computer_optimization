@@ -2,6 +2,27 @@ import java.util.Arrays;
 
 public class simplexMethod {
 
+    public static void main(String[] args) {
+        // A matrix is used to pass constraints
+        double[][] A = {
+                {1, 2, 1},
+                {3, 0, 2},
+                {1, 4, 0}
+        };
+// b is used to pass right hand side value of the constraints
+// c is to pass objective function
+        double[] b = {430, 460, 420};
+        double[] c = {3, 2, 5};
+
+// true for maximization, false for minimization
+        boolean isMaximization = true;
+
+        simplexMethod simplexMethod = new simplexMethod(A, b, c, isMaximization);
+        simplexMethod.solve();
+
+        System.out.println("Solution: " + Arrays.toString(simplexMethod.getSolution()));
+    }
+
     private final double[][] table; // The table
     private final int numberOfConstraints; // Number of constraints
     private final int numberOfOriginalVariables; // Number of original variables
@@ -104,24 +125,5 @@ public class simplexMethod {
         return solution;
     }
 
-    public static void main(String[] args) {
-        // A matrix is used to pass constraints
-        double[][] A = {
-                {1, 2, 1},
-                {3, 0, 2},
-                {1, 4, 0}
-        };
-        // b is used to pass right hand side value of the constraints
-        // c is to pass objective function
-        double[] b = {430, 460, 420};
-        double[] c = {3, 2, 5};
 
-        // true for maximization, false for minimization
-        boolean isMaximization = true;
-
-        simplexMethod simplexMethod = new simplexMethod(A, b, c, isMaximization);
-        simplexMethod.solve();
-
-        System.out.println("Solution: " + Arrays.toString(simplexMethod.getSolution()));
-    }
 }
